@@ -1,0 +1,29 @@
+body{
+    background-color: white;
+}
+nav{
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    background-color: aqua;
+    height: 70px;
+    width: 100%;
+}
+div{
+    color: black;
+    display: flex;
+    justify-content: space-around;
+    background-color: blue;
+}
+#demo1{
+    color: black;
+    display: flex;
+    justify-content: space-evenly;
+    background-color:red;
+}
+#nav{
+    color: black;
+    display: flex;
+    justify-content: center;
+    background-color: brown;
+}
