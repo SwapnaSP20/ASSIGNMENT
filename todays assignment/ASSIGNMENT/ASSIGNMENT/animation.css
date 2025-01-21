@@ -1,0 +1,284 @@
+body{
+    background-image: linear-gradient(to left,#9cc2ade1,#CBD9C8);
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+#main{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    margin: 0%;
+}
+#cloud{
+    height: 35vh;
+    width: 200vw;
+    background-image: url("cloud.png");
+    background-size: cover;
+    animation-name: cloud1;
+    background-repeat: repeat-x;
+    animation-duration:80s ;
+    animation-timing-function: linear;
+  position: absolute;
+  animation-iteration-count: infinite;
+  top: -120px;
+  z-index: 2;
+}
+
+@keyframes cloud1{
+ 0%{
+   position:absolute;
+      right: 1000px;
+     }
+     10%{
+        position:absolute;
+          right:900px
+          }
+          20%{
+            position:absolute;
+               right: 800px;
+              }
+              30%{
+                position:absolute;
+                   right: 700px;
+                  }
+                  40%{
+                    position:absolute;
+                       right: 600px;
+                      }
+                      50%{
+                        position:absolute;
+                           right: 500px;
+                          }
+                          60%{
+                            position:absolute;
+                               right: 400px;
+                              }
+                              70%{
+                                position:absolute;
+                                   right: 300px;
+                                  }
+                                  80%{
+                                    position:absolute;
+                                       right: 200px;
+                                      }
+                                      90%{
+                                        position:absolute;
+                                           right: 100px;
+                                          }
+                                        100%{
+                                          position:absolute;
+                                            right: 0px;
+                                             }
+                                               }
+ #road
+ {
+    position: relative;
+   background-color: rgba(0, 0, 0, 0.667);
+    width: 105vw;
+    height: 41vh;
+    top: 500px;
+    right: 10px;
+    transform: skewY(-0.5deg);
+z-index: 10;
+ }
+ #car1{
+    background-image: url("car1.webp");
+    width: 18vw;
+    height: 30vw;
+    background-size:15vw 20vh ;  
+    background-repeat: no-repeat; 
+    position: relative;
+    left: 1200px;
+    top: 300px;
+    animation-name: car1;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    z-index: 11;
+  }
+ @keyframes car1{
+    from{
+       transform: translateX(100%);
+    }
+    to{
+        transform: translateX(-620%);
+      }
+ }
+
+ #grass{
+  height: 30vh;
+  width: 105vw;
+  background-image: url("grass11.png");
+  background-size:105vw 30vh ;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 282px;
+  transform: skewY(-0.5deg);
+  right: 10px;
+  z-index: 1;
+}
+#beach{
+  height: 55vh;
+  width: 105vw;
+  background-image: url("beach_PNG8.png");
+  background-size:105vw 55vh ;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 82px;
+  right: 10px;
+  z-index: 8;
+}
+#divider{
+  height: 30vh;
+  width: 105vw;
+  background-image: url("divider.webp");
+  background-size:30vw 9vh ;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 435px;
+  transform: skewY(-0.5deg);
+  right: 10px;
+  z-index: 9;
+}
+#divider1{
+  height: 30vh;
+  width: 105vw;
+  background-image: url("divider.webp");
+  background-size:30vw 9vh ;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 433px;
+  transform: skewY(-0.5deg);
+  left: 375px;
+  z-index: 9;
+}
+#divider2{
+  height: 30vh;
+  width: 105vw;
+  background-image: url("divider.webp");
+  background-size:30vw 9vh ;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 429px;
+  transform: skewY(-0.5deg);
+  left: 835px;
+  z-index: 9;
+}
+#divider3{
+  height: 30vh;
+  width: 105vw;
+  background-image: url("divider.webp");
+  background-size:30vw 9vh ;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 425px;
+  transform: skewY(-0.5deg);
+  left: 1297px;
+  z-index: 9;
+}
+#birds{
+  width: 100vw;
+  height: 30vh;
+  background-image: url("birds.png");
+  background-size: 10vw 20vh;
+  position: absolute;
+  z-index: 3;
+  top: 50px;
+  background-repeat: no-repeat;
+  animation-name:birds ;
+  animation-duration: 65s;
+  animation-iteration-count: infinite;
+}
+@keyframes birds {
+  from{
+    transform: translateX(-50%);
+  }
+  to{
+    transform: translateX(200%);
+  }
+}
+#plane{
+  background-image: url("plane_PNG101253.png");
+  width: 15vw;
+  height: 10vh;
+  background-size: 8vw 5vh;
+  position: absolute;
+  top: 50px;
+  background-repeat: no-repeat;
+  right: 10px;
+  animation-name:aeroplane;
+  animation-duration: 50s;
+  animation-iteration-count: infinite;
+}
+@keyframes aeroplane {
+  from{
+    transform: translateX(100%);
+  }
+  to{
+    transform: translateX(-800%);
+  }
+}
+#ship{
+  background-image: url("ship.png");
+  width: 15vw;
+  height: 10vh;
+  background-size: 8vw 9vh;
+  position: absolute;
+  top: 265px;
+  background-repeat: no-repeat;
+ left: 50px;
+  animation-name:ship;
+  animation-duration: 90s;
+  animation-iteration-count: infinite;
+}
+@keyframes ship {
+  from{
+    transform: translateX(-50%);
+  }
+  to{
+    transform: translateX(800%);
+  }
+}
+#car11{
+  background-image: url("car-29078_960_720.webp");
+  width: 18vw;
+  height: 30vh;
+  background-size:15vw 17vh ;  
+  background-repeat: no-repeat; 
+  position: relative;
+  left: 20px;
+  bottom: 255px;
+  animation-name: car11;
+  animation-duration: 30s;
+  z-index: 11;
+  animation-iteration-count: infinite;
+}
+@keyframes car11{
+  from{
+     transform: translateX(10%);
+  }
+  to{
+      transform: translateX(620%);
+    }
+}
+#car12{
+  background-image: url("car-clipart-lamborghini-10.png");
+  width: 18vw;
+  height: 30vh;
+  background-size:15vw 12vh ;  
+  background-repeat: no-repeat; 
+  position: relative;
+  left: -600px;
+  bottom: 455px;
+  animation-name: car12;
+  animation-duration: 45s;
+  z-index: 11;
+  animation-iteration-count: infinite;
+}
+@keyframes car12{
+  from{
+     transform: translateX(10%);
+  }
+  to{
+      transform: translateX(920%);
+    }
+}
